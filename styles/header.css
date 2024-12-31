@@ -1,0 +1,86 @@
+/* Base Header Styles */
+.header {
+    display: flex;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    z-index: 100;
+}
+
+.nav {
+    background-color: rgba(58, 57, 57, 0.7);
+    /* width: 100%;
+    max-width: 900px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    border-radius: 5px;
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    padding: 10px 15px; /* Added padding for better spacing */
+}
+
+.left-portion {
+    color: white;
+    font-size: 24px;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.left-portion:hover {
+    color: gray;
+}
+
+.right-portion {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds spacing between nav buttons */
+}
+
+.nav-buttons {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.nav-buttons:hover {
+    color: gray;
+}
+
+/* .contact-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+    background-color: rgb(24, 19, 19);
+    border: 1px solid white;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+} */
+
+/* @media (max-width: 820px) {
+    .container-fluid {
+        max-width: 700px;
+        width: 100%;
+    }
+} */
+
+@media (max-width: 600px) {
+    .header {
+        justify-content: flex-start;
+        margin-left: 20px;
+        
+    }
+}

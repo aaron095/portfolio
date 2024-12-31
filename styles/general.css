@@ -1,0 +1,18 @@
+body {
+    font-family: Roboto, Arial;
+    
+    margin: 0;
+}
+
+.intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),  url("/images/background.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+

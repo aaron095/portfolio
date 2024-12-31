@@ -1,0 +1,124 @@
+.resume {
+    background: linear-gradient(to bottom, gray , rgba(0, 0, 0, 0.9));
+    padding-bottom: 120px;
+    padding-top: 80px;
+}
+
+.resume-text { 
+    color: white;
+    font-size: 20px;
+    
+    text-align: center;
+    margin: 0 auto;
+}
+
+.education-title {
+    color: rgb(105, 202, 235);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 50px;
+    
+}
+
+.breaker {
+    border-left: 1px solid white;
+    position: relative;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+
+.occupation-title {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.occupation-length {
+    color: lightgray;
+}
+
+.occupation-descr {
+    color: lightgray;
+}
+
+
+@media (max-width: 438px) {
+    .work-grid {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    
+    .icon-container {
+        top: -85px;
+        left: 0;
+    }
+    
+    .occupation-title, .occupation-descr {
+        font-size: 14px;
+    }
+
+    .work-left-section, .work-right-section {
+        margin-left: 50px;
+    }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: 200px 1fr 200px;
+    }  
+}
+
+@media (min-width: 768px) {
+    .work-grid {
+        grid-template-columns: 300px 1fr 400px;
+        row-gap: 0;
+        text-align: left;
+    }
+    .occupation-length, .occupation-descr {
+        text-align: left;
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+    .resume-text {
+        font-size: 22px;
+    }
+
+    .education-title {
+        font-size: 20px;
+    }
+
+    .occupation-title {
+        font-size: 20px;
+    }
+
+    .work-grid {
+        column-gap: 50px;
+    }
+}

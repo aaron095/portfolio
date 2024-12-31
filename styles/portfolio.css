@@ -1,0 +1,172 @@
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.portfolio-grid-left {
+    display: grid;
+    
+    grid-template-rows: 500px 350px 400px;
+}
+
+.portfolio-flex {
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+.first-proj, .sec-proj, .third-proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(183, 210, 219, 0.6);
+    border: 1px solid black;
+}
+
+.first-proj {
+    background-image: url("/images/uxdesign.jpg");
+    
+    
+}
+
+.sec-proj {
+    background-image: url("/images/search-img.avif");
+    
+}
+
+.third-proj {
+    background-image: url("/images/diabetic-img.avif");
+    
+}
+
+
+.card-img {
+    display: flex;
+    
+}
+
+.project-name-transition {
+    color: white;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.4s ease-in, transform 0.4s ease-in;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Above the overlay */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: default;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 300px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.card-descr {
+    margin-left: 20px;
+}
+
+.card-type {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+}
+
+.close-button, .details-button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    
+}
+
+.details-button {
+    text-align: center;
+    border-left: none;
+    text-decoration: none;
+}
+
+.close-button:hover, .details-button:hover {
+    background-color: rgb(105, 202, 235);
+    border: none;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.project-type {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.project-title {
+    color: lightgray;
+    font-size: 14px;
+}
+
+.first-proj:hover .project-name-transition, 
+.sec-proj:hover .project-name-transition,
+.third-proj:hover .project-name-transition {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateX(0);
+}
+
+.portfolio-grid-right {
+    display: grid;
+    grid-template-rows: 400px 350px 500px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none; /* Hidden by default */
+    z-index: 999; /* Make sure it's above the rest of the content */
+}
+
+@media (max-width: 600px) {
+    .portfolio-flex {
+        flex-direction: column;
+    }
+
+
+}

@@ -1,0 +1,48 @@
+.name {
+    color: white;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.work {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more-about-button {
+    border: 3px solid gray;
+    background-color: transparent;
+    color: rgb(105, 202, 235);
+    padding: 10px 20px 10px 20px;
+    height: 3rem;
+    transition: border-color 0.2s;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Roboto, Arial
+}
+
+.more-about-button:hover {
+    border-color: white;
+}
+
+@media (max-width: 608px) {
+    .name {
+        font-size: 60px;
+    }
+
+
+}
