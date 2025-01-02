@@ -30,9 +30,7 @@
     color: white;
 }
 
-.service-text:hover {
-    color: lightblue;
-}
+
 
 @media (max-width: 600px) {
     .service-grid-container {
