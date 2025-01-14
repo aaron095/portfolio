@@ -5,7 +5,7 @@ body {
 }
 
 .intro {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),  url("/images/background-img.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),  url("/images/intro-background.jpg");
     
     height: 100vh;
     background-position: center;
