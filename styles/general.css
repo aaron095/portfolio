@@ -5,7 +5,7 @@ body {
 }
 
 .intro {
-    background-image:  url("/images/background-img.jpg");
+    background-image:  url("../images/background-img.jpg");
     
     height: 100vh;
     background-position: center;
